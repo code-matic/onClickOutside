@@ -11,7 +11,7 @@ npm i @codematic/onclickoutside
 
 ```javascript
 
-import onClickOutside from "onClickOutside";
+import onclickoutside from "onclickoutside";
 import { useRef, useState, useCallback} from 'react';
 
 export default function ClickFunction() {
@@ -23,7 +23,7 @@ export default function ClickFunction() {
     setClose(false);
   }, []);
 
-  onClickOutside(wrapperRef, onClickOutsideCallback);
+  onclickoutside(wrapperRef, onClickOutsideCallback);
 
   return (
     <div className={styles.Homecontainer}>
