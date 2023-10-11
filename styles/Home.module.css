@@ -1,0 +1,16 @@
+.container {
+  width: 200px;
+}
+
+.buttonClick{
+  width: 100%;
+  cursor: pointer;
+}
+
+.option {
+  border: 2px solid black;
+}
+
+.box{
+  border: 2px solid red;
+}
