@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, useCallback} from 'react';
 import styles from '../styles/Home.module.css';
 
 
-export default function useOnClickOutsideTest() {
+export default function onClickOutsideTest() {
 
   const [close, setClose] = useState(false);
   const ref = useRef();

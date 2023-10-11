@@ -1,15 +1,34 @@
 {
-  "name": "onclickoutside",
-  "version": "0.1.0",
-  "private": true,
-  "main": "component/onclickoutside.js",
-  "module": "component/onclickoutside.js",
+  "name": "@codematic/onclickoutside",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A component designed to facilitate the automatic closure of a button element upon clicking outside its boundaries.",
+  "main": "component/onClickOutside.js",
+  "module": "component/onClickOutside.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-matic/onClickOutside.git"
+  },
+  "bugs": {
+    "url": "https://github.com/code-matic/onClickOutside/issues"
+  },
+  "homepage": "https://github.com/code-matic/onClickOutside#readme",
+  "keywords": [
+    "onClickOutside",
+    "react-web-components",
+    "react",
+    "button",
+    "nextjs",
+    "close-button"
+  ],
+  "author": "Codematic Technology",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "next": "13.5.4",
     "react": "18.2.0",

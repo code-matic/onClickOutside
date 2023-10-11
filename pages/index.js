@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback} from 'react';
+import { useRef, useState, useCallback} from 'react';
 import useOnClickOutside from "../component/onClickOutside";
 import styles from '../styles/Home.module.css';
 import Link from "next/link";

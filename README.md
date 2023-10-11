@@ -1,16 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+## onClickOutside
+A component designed to facilitate the automatic closure of a button element upon clicking outside its boundaries.
 ## Getting Started
-First, run the development server:
+Install package
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm i @codematic/onclickoutside
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
 ## USAGE
+
+```javascript
+
+import onClickOutside from "onClickOutside";
+import { useRef, useState, useCallback} from 'react';
+
+export default function ClickFunction() {
+
+  const [close, setClose] = useState(false);
+  const wrapperRef = useRef();
+
+  const onClickOutsideCallback = useCallback(() => {
+    setClose(false);
+  }, []);
+
+  onClickOutside(wrapperRef, onClickOutsideCallback);
+
+  return (
+    <div className={styles.Homecontainer}>
+      <div ref={wrapperRef}>
+        <button onClick={()=> setClose(!close)}>
+          Button
+        </button>
+      {
+        close && (
+        <div className={styles.box}>
+          <p>To close this box</p>
+          <p>Click outside the box</p>
+          
+        </div>
+        )
+      }
+      </div>
+    </div>
+  )
+}
+
+```
