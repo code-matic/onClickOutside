@@ -1,5 +1,5 @@
 import { useRef, useState, useCallback} from 'react';
-import useOnClickOutside from "../component/onClickOutside";
+import onclickoutside from "../component/onclickoutside";
 import styles from '../styles/Home.module.css';
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ export default function Home() {
     setClose(false);
   }, []);
 
-  useOnClickOutside(wrapperRef, onClickOutsideCallback);
+  onclickoutside(wrapperRef, onClickOutsideCallback);
 
   return (
     <div className={styles.Homecontainer}>

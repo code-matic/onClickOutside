@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useEffect, useRef }  from 'react';
 
 
-export default function onClickOutside(ref, handler) {
+export default function onclickoutside(ref, handler) {
   useEffect(() => {
     const listener = event => {
       if (!ref.current || ref.current.contains(event.target)) {
